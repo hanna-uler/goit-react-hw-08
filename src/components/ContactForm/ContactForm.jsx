@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import "yup-phone-lite";
 import { LuUserRoundPlus } from "react-icons/lu";
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contactsOps';
+import { addContact } from '../../redux/contacts/operations';
 
 export default function ContactForm() {
     const contactForm = {

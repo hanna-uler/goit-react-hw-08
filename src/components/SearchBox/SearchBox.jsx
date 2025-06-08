@@ -1,7 +1,7 @@
 import css from './SearchBox.module.css'
 import { LuUserRoundSearch } from "react-icons/lu";
 import { useSelector, useDispatch } from "react-redux";
-import { changeFilter, selectNameFilter } from "../../redux/filtersSlice";
+import { changeFilter, selectNameFilter } from "../../redux/filters/slice";
 
 export default function SearchBox() {
     const query = useSelector(selectNameFilter);
