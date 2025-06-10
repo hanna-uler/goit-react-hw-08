@@ -4,7 +4,8 @@ import { useId } from 'react'
 import * as Yup from "yup";
 import "yup-phone-lite";
 import { LuUserRound } from "react-icons/lu";
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { register } from '../../redux/auth/operations';
 
 export default function RegistrationForm() {
     const userForm = {
@@ -12,7 +13,7 @@ export default function RegistrationForm() {
         email: "",
         password: "",
     };
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
     const nameId = useId();
     const emailId = useId();
     const passwordId = useId();
@@ -23,9 +24,10 @@ export default function RegistrationForm() {
     });
 
     const handleSubmit = (values, actions) => {
-        const { name, email, password } = values;
-        console.log(name, email, password);
-        // dispatch(addUser({name, email, password}));
+        // const { name, email, password } = values;
+        // console.log(name, email, password);
+        // dispatch(register({name, email, password}));
+        dispatch(register(values));
         actions.resetForm();
     }
     return (
