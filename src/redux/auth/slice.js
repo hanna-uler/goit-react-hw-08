@@ -46,7 +46,6 @@ const authSlice = createSlice({
                 };
                 state.token = null;
             })
-            .addCase(logout.rejected, handleError)
     }
 })
 
