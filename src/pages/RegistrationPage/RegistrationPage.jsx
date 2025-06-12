@@ -5,7 +5,7 @@ export default function RegistrationPage() {
     return (
         <div className={css.container}>
             <h1>Welcome to the Registration Page</h1>
-            <p>Please fill in the fields.</p>
+            <p>Please fill in the fields to register your account.</p>
             <RegistrationForm/>
         </div>
     )

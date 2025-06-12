@@ -8,12 +8,11 @@ export default function RegistrationPage() {
     return (
         <div className={css.container}>
             {!isLoggedIn
-                ? <div>
+                && <div>
                       <h1>Welcome!</h1>
-                      <p>Please, enter your data below.</p>
+                      <p>Please, enter your data below to log in.</p>
                       <LoginForm />
                 </div>
-                : <p>You've already logged in.</p>
             }
         </div>
     )
