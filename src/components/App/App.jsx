@@ -1,8 +1,9 @@
-import { lazy, Suspense } from 'react'
-// import { useDispatch } from 'react-redux'
+import { lazy, Suspense, useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import { Route, Routes } from 'react-router-dom'
 // import { fetchContacts } from '../../redux/contacts/operations'
 import Layout from '../Layout/Layout'
+import { refreshUser } from '../../redux/auth/operations';
 // import {selectLoading, selectError} from '../../redux/contacts/selectors'
 // import ContactList from '../ContactList/ContactList'
 // import ContactForm from '../ContactForm/ContactForm'
@@ -17,13 +18,13 @@ const ContactsPage = lazy(() => import("../../pages/ContactsPage/ContactsPage"))
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage/NotFoundPage"));
   
 export default function App() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   // const isLoading = useSelector(selectLoading);
   // const error = useSelector(selectError);
   
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch])
+  useEffect(() => {
+    dispatch(refreshUser());
+  }, [dispatch])
   
   return (
     <Layout>
