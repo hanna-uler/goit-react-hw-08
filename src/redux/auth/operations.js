@@ -36,7 +36,8 @@ export const refreshUser = createAsyncThunk(
         console.log("refreshUser");
         const currentToken = thunkAPI.getState().auth.token;
         axios.defaults.headers.Authorization = `Bearer ${currentToken}`;
-        await axios.get("/users/current");
+        const res = await axios.get("/users/current");
+        return res.data;
     },
     {
         condition: (_, thunkAPI) => {
