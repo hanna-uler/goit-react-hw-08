@@ -7,7 +7,7 @@ import { selectIsRefreshing } from '../../redux/auth/selectors';
 import Loader from '../Loader/Loader'
 import RestrictedRoute from '../RestrictedRoute';
 import PrivateRoute from '../PrivateRoute';
-// import css from './App.module.css'
+import css from './App.module.css'
 
 const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
 const LoginPage = lazy(() => import("../../pages/LoginPage/LoginPage"));
@@ -26,7 +26,7 @@ export default function App() {
   return isRefreshing
     ? (<Loader />)
     : (
-      <Layout>
+      <Layout className={css.container}>
         <Suspense fallback={null}>
           <Routes>
             <Route path='/' element={<HomePage />} />
