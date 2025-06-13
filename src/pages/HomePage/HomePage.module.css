@@ -27,6 +27,13 @@
   font-weight: bold;
 }
 
+.btnBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 2rem;
