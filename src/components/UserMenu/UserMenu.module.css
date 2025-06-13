@@ -6,4 +6,18 @@
 
 .username {
   display: inline;
+  padding: 0.5rem;
+}
+.btn {
+  border: solid 1px #4caf50;
+  color: #333;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.btn:hover {
+  color: #4caf50;
 }
