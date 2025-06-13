@@ -5,10 +5,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* margin: 8px auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px; */
 }
 @media (min-width: 768px) {
   .container {
@@ -20,28 +16,3 @@
     flex: 1 1 calc(50% - 1rem);
   }
 }
-/* .contactItem {
-  display: flex;
-  width: 200px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  background-color: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
-  font-size: 16px;
-  font-family: system-ui, sans-serif;
-  flex-direction: column;
-  align-items: center;
-}
-.contactItem:hover {
-  background-color: #f3f4f6;
-  cursor: pointer;
-}
-@media (min-width: 600px) {
-  .contactItem {
-    flex-direction: row;
-    align-items: center;
-  }
-} */
