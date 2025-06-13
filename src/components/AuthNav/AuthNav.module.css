@@ -12,9 +12,6 @@
 }
 
 .link {
-  display: flex;
-  align-items: center;
-  gap: 6px;
   text-decoration: none;
   color: #333;
   font-weight: 500;

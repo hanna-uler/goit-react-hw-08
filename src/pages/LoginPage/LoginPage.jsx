@@ -9,8 +9,8 @@ export default function RegistrationPage() {
         <div className={css.container}>
             {!isLoggedIn
                 && <div>
-                      <h1>Welcome!</h1>
-                      <p>Please, enter your data below to log in.</p>
+                      <h1 className={css.header}>Welcome!</h1>
+                      <p className={css.descr}>Please, enter your data below to log in.</p>
                       <LoginForm />
                 </div>
             }
