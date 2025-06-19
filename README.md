@@ -1,12 +1,65 @@
-# React + Vite
+# 📱 Phonebook App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive contact management web app with user registration, login, and secure backend data storage. Built with **React** as the final assessment project for the **React module at GoIT School**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [goit-react-hw-08-omega-green.vercel.app](https://goit-react-hw-08-omega-green.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔐 User authentication (register / login / logout)
+- 📁 Private contact storage with backend integration
+- 🔍 Real-time search with debounce
+- ➕ Add and delete contacts
+- ✅ Form validation with Formik & Yup
+- 📱 Mobile-first responsive design
+- 💾 Persistent state with localStorage (fallback)
+- 🔄 State management via Redux Toolkit
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- React
+- Redux Toolkit
+- React Router
+- Formik + Yup
+- Axios
+- React Icons
+- CSS Modules
+- Vite
+- Vercel (for deployment)
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/hanna-uler/goit-react-hw-08.git
+cd goit-react-hw-08
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the app
+
+```bash
+npm run dev
+```
+
+## 🧪 Available Scripts
+
+npm run dev — Start development server
+
+npm run build — Build production app
+
+## 📚 Project Status
+
+This app was developed as the final project for the React module in the GoIT Full-Stack Development Course. It is actively maintained and open to feedback and improvements.
+
+## 🙋‍♀️ Author
+
+Created by [Hanna Uler](https://www.linkedin.com/in/hanna-uler/)
+
+📫 Feel free to connect or reach out on LinkedIn!
